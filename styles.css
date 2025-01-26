@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8; /* Light blue-gray background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #2196f3; /* Bright blue for a bold, modern look */
+    color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Section Styles */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bucket-list h2 {
+    font-size: 2.5rem;
+    color: #2196f3; /* Matching blue from the header */
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* White background for list items */
+    color: #333;
+    margin: 1.2rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Status Styles */
+.completed {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #4caf50; /* Green for completed tasks */
+}
+
+.pending {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #ff9800; /* Orange for pending tasks */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2196f3; /* Matching blue from header */
+    color: white;
+    margin-top: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 1.8rem;
+    }
+
+    li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+}
